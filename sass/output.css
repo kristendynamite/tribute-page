@@ -405,19 +405,49 @@ h3 {
   font-style: italic;
   font-size: 2em; }
 
+li {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.2em; }
+
 body {
   background-color: #e0ffee; }
 
 .header {
   background-color: white; }
+  @media only screen and (min-width: 690px) {
+    .header {
+      height: 90px; } }
   .header img {
     width: 90px;
     float: left; }
+    @media only screen and (min-width: 690px) {
+      .header img {
+        position: absolute; } }
   .header i {
     float: right;
     padding-top: 30px; }
+    @media only screen and (min-width: 690px) {
+      .header i {
+        display: none; } }
   .header .navbar {
     display: none; }
+    @media only screen and (min-width: 690px) {
+      .header .navbar {
+        position: relative;
+        display: inline-block;
+        left: 20vw;
+        top: 26px;
+        width: 80vw; }
+        .header .navbar ul {
+          margin: 0;
+          padding: 10px 0;
+          overflow: auto; }
+          .header .navbar ul li {
+            list-style: none;
+            display: inline;
+            padding-left: 2vw;
+            padding-right: 2vw; } }
 
 .featured {
   position: relative;

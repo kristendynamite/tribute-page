@@ -1,14 +1,41 @@
 .header {
   background-color: white;
+  @media #{$breakpoint-medium} {
+    height: 90px;
+  }
   img {
     width: 90px;
     float: left;
+    @media #{$breakpoint-medium} {
+      position: absolute;
+    }
   }
   i {
     float: right;
     padding-top: 30px;
+    @media #{$breakpoint-medium} {
+      display: none;
+    }
   }
   .navbar {
     display: none;
+    @media #{$breakpoint-medium} {
+      position: relative;
+      display: inline-block;
+      left: 20vw;
+      top: 26px;
+      width: 80vw;
+      ul {
+        margin: 0;
+        padding: 10px 0;
+        overflow: auto;
+        li {
+          list-style: none;
+          display: inline;
+          padding-left: 2vw;
+          padding-right: 2vw;
+        }
+      }
+    }
   }
 }
