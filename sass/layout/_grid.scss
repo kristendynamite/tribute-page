@@ -1,0 +1,6 @@
+.header {
+  @include grid-container;
+  .logo {
+    @include grid-column(12);
+  }
+}

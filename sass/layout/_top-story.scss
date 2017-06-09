@@ -1,0 +1,10 @@
+.top-story {
+  @include card-style;
+  p {
+    text-align: right;
+    padding-right: 10px;
+  }
+  img {
+    width: 100%;
+  }
+}
