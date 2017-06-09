@@ -419,12 +419,69 @@ body {
   .header .navbar {
     display: none; }
 
+.featured {
+  position: relative;
+  border: solid 1px lightgrey;
+  background-color: white;
+  margin: 15px 5px 0 5px; }
+  .featured h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    line-height: 1.3em; }
+  .featured h3 {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    line-height: 1.3em; }
+  .featured .text {
+    float: left;
+    position: relative;
+    background: white;
+    width: 40%; }
+    .featured .text p {
+      letter-spacing: .1em;
+      line-height: 1.3em; }
+      .featured .text p:first-child {
+        font-weight: bold;
+        text-transform: uppercase; }
+    .featured .text h3 {
+      text-align: left; }
+    .featured .text button {
+      border: none;
+      background: black;
+      color: white;
+      text-transform: uppercase;
+      padding: 20px; }
+      .featured .text button:hover {
+        background-color: #e0ffee;
+        color: black; }
+  .featured img {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    float: right;
+    left: 20px; }
+
 .header::after {
   clear: both;
   content: "";
   display: block; }
 .header .logo {
   width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px; }
+
+.featured::after {
+  clear: both;
+  content: "";
+  display: block; }
+.featured .text {
+  width: calc(41.66667% - 28.33333px);
+  float: left;
+  margin-left: 20px; }
+.featured img {
+  width: calc(58.33333% - 31.66667px);
   float: left;
   margin-left: 20px; }
 
@@ -445,7 +502,8 @@ body {
   .sign-up p {
     text-align: center;
     font-style: italic;
-    font-weight: bold; }
+    font-weight: bold;
+    font-weight: 400; }
   .sign-up form {
     text-align: center; }
     .sign-up form input {
@@ -456,6 +514,9 @@ body {
         background: black;
         color: white;
         text-transform: uppercase; }
+        .sign-up form input:last-of-type:hover {
+          background-color: #e0ffee;
+          color: black; }
 
 .top-story {
   border: solid 1px lightgrey;

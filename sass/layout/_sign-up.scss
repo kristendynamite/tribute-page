@@ -4,6 +4,7 @@
     text-align: center;
     font-style: italic;
     font-weight: bold;
+    font-weight: 400;
   }
   form {
     text-align: center;
@@ -11,10 +12,7 @@
       padding: 10px;
       margin: 10px;
       &:last-of-type {
-        border: none;
-        background: black;
-        color: white;
-        text-transform: uppercase;
+        @include btn;
       }
     }
   }

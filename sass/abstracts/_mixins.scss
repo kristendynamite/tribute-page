@@ -15,3 +15,14 @@
     line-height: 1.3em;
   }
 }
+
+@mixin btn {
+  border: none;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $background;
+    color: black;
+  }
+}
