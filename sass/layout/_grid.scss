@@ -14,3 +14,23 @@
     @include grid-column(7);
   }
 }
+
+.instagram {
+  @include grid-container;
+  p {
+    @include grid-column(12);
+  }
+  h4 {
+    @include grid-column(12);
+  }
+  .insta-photos {
+    @include grid-container;
+    img {
+      @include grid-column(4);
+      @media #{$breakpoint-medium} {
+        @include grid-column(3);
+      }
+    }
+
+  }
+}

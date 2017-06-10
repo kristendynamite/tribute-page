@@ -20,7 +20,7 @@
     button {
       @include btn;
       padding: 20px;
-      
+      margin-bottom: 20px;
     }
   }
   img {
@@ -29,5 +29,6 @@
     position: relative;
     float: right;
     left: 20px;
+    height: 100%;
   }
 }

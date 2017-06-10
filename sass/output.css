@@ -390,8 +390,7 @@ template {
   display: none; }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300; }
+  font-family: 'Roboto', sans-serif; }
 
 .header i {
   font-size: 2em; }
@@ -453,7 +452,7 @@ body {
   position: relative;
   border: solid 1px lightgrey;
   background-color: white;
-  margin: 15px 5px 0 5px; }
+  margin: 15px 10px 0 10px; }
   .featured h2 {
     padding-left: 10px;
     padding-right: 10px;
@@ -482,7 +481,8 @@ body {
       background: black;
       color: white;
       text-transform: uppercase;
-      padding: 20px; }
+      padding: 20px;
+      margin-bottom: 20px; }
       .featured .text button:hover {
         background-color: #e0ffee;
         color: black; }
@@ -491,7 +491,21 @@ body {
     overflow: hidden;
     position: relative;
     float: right;
-    left: 20px; }
+    left: 20px;
+    height: 100%; }
+
+.footer {
+  position: absolute; }
+  .footer img {
+    position: relative;
+    height: 100px;
+    padding: 5px; }
+    .footer img:first-child {
+      margin-left: 25vw; }
+    .footer img:last-child {
+      margin-right: 25vw; }
+  .footer p {
+    text-align: center; }
 
 .header::after {
   clear: both;
@@ -515,10 +529,48 @@ body {
   float: left;
   margin-left: 20px; }
 
+.instagram::after {
+  clear: both;
+  content: "";
+  display: block; }
+.instagram p {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px; }
+.instagram h4 {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px; }
+.instagram .insta-photos::after {
+  clear: both;
+  content: "";
+  display: block; }
+.instagram .insta-photos img {
+  width: calc(33.33333% - 26.66667px);
+  float: left;
+  margin-left: 20px; }
+  @media only screen and (min-width: 690px) {
+    .instagram .insta-photos img {
+      width: calc(25% - 25px);
+      float: left;
+      margin-left: 20px; } }
+
+.instagram {
+  margin: 15px 10px 0 10px;
+  background-color: #f2f2f2;
+  text-align: center; }
+  .instagram h4 {
+    font-size: 1.5em; }
+  .instagram img {
+    margin-bottom: 20px; }
+
 .sign-up {
   border: solid 1px lightgrey;
   background-color: white;
-  margin: 15px 5px 0 5px; }
+  margin: 15px 10px 0 10px;
+  border-style: dashed;
+  margin-left: 40px;
+  margin-right: 40px; }
   .sign-up h2 {
     padding-left: 10px;
     padding-right: 10px;
@@ -538,7 +590,7 @@ body {
     text-align: center; }
     .sign-up form input {
       padding: 10px;
-      margin: 10px; }
+      margin: 20px; }
       .sign-up form input:last-of-type {
         border: none;
         background: black;
@@ -551,7 +603,7 @@ body {
 .top-story {
   border: solid 1px lightgrey;
   background-color: white;
-  margin: 15px 5px 0 5px; }
+  margin: 15px 10px 0 10px; }
   .top-story h2 {
     padding-left: 10px;
     padding-right: 10px;

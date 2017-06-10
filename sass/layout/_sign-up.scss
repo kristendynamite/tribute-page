@@ -1,5 +1,8 @@
 .sign-up {
   @include card-style;
+  border-style: dashed;
+  margin-left: 40px;
+  margin-right: 40px;
   p {
     text-align: center;
     font-style: italic;
@@ -10,7 +13,7 @@
     text-align: center;
     input {
       padding: 10px;
-      margin: 10px;
+      margin: 20px;
       &:last-of-type {
         @include btn;
       }
