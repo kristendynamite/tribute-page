@@ -6,5 +6,30 @@
   }
   img {
     width: 100%;
+    @media #{$breakpoint-large} {
+      height: 100%;
+      float: right;
+      width: 50%;
+    }
+  }
+  .top-text {
+    @media #{$breakpoint-large} {
+      position: relative;
+      height: 100%;
+      width: 60%;
+      left: 30px;
+      top: 40px;
+      background: white;
+      padding: 5px;
+      h2 {
+        font-size: 1.1em;
+      }
+    }
+  }
+  @media #{$breakpoint-large} {
+    position: relative;
+    overflow: hidden;
+    background: $background;
+    border: none;
   }
 }

@@ -2,33 +2,40 @@
   position: relative;
   @include card-style;
   .text {
-    float: left;
+    // float: left;
     position: relative;
     background: white;
     width: 40%;
     p {
       letter-spacing: .1em;
-      line-height: 1.3em;
+      // line-height: 1.3em;
       &:first-child {
         font-weight: bold;
         text-transform: uppercase;
       }
     }
     h3 {
-      text-align: left;
+      display: none;
+      @media #{$breakpoint-medium} {
+        display: block;
+        text-align: left;
+      }
     }
     button {
       @include btn;
-      padding: 20px;
-      margin-bottom: 20px;
+      padding: 10px;
+      // margin-bottom: 20px;
     }
   }
   img {
     width: 100%;
-    overflow: hidden;
+    height: 90%;
+    max-height: 700px;
     position: relative;
-    float: right;
-    left: 20px;
-    height: 100%;
+    // margin-top: 50%;
+    // transform: translateY(-50%);
+    // float: right;
+
+    // left: 20px;
   }
 }
