@@ -1,7 +1,7 @@
 @mixin card-style {
   border: solid 1px $border;
   background-color: white;
-  margin: 15px 10px 0 10px;
+  margin: 15px 5px 0 5px;
   h2{
     padding-left: 10px;
     padding-right: 10px;
@@ -9,10 +9,8 @@
     line-height: 1.3em;
   }
   h3{
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    line-height: 1.3em;
+    @extend h2;
+    line-height: 1em;
   }
 }
 

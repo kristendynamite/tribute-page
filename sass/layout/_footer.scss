@@ -1,18 +1,16 @@
 .footer {
-  position: absolute;
+  display: block;
+  margin: auto;
+  // text-align: center;
   img {
-    position: relative;
+    display: inline-block;
     height: 100px;
     padding: 5px;
-    &:first-child {
-      margin-left: 25vw;
-    }
-    &:last-child {
-      margin-right: 25vw;
-    }
+    margin-left: 20%;
   }
   p {
     text-align: center;
+    position: relative;
   }
 
 }

@@ -5,6 +5,16 @@
   }
 }
 
+.featured-section {
+  @include grid-container;
+  .featured {
+    @include grid-column (12);
+    @media #{$breakpoint-large} {
+      @include grid-column(6);
+    }
+  }
+}
+
 .featured {
   @include grid-container;
   .text {
