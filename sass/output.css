@@ -498,11 +498,6 @@ body {
 .footer {
   display: block;
   margin: auto; }
-  .footer img {
-    display: inline-block;
-    height: 100px;
-    padding: 5px;
-    margin-left: 20%; }
   .footer p {
     text-align: center;
     position: relative; }
